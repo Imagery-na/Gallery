@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Первый шаблон</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/dopstyle.css" rel="stylesheet" media="screen">
+  <script type="text/javascript" src="js/jscode.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<div class="container">
+		<div class="row">
+			<div class="col-md-12 head-block">
+Инновационная гимнастика
+<p>Электронный дневник</p>
+<img src="images/dv.png" id="emblema" align="right">
+      </div>
+        <div class="col-md-4 top-menu">
+  				<ul>
+  					<li><a href="index.html">О проекте</a></li>
+  				</ul>
+  			</div>
+        <div class="col-md-4 top-menu">
+  				<ul>
+  					<li><a href="gym.html">Упражнения</a></li>
+  				</ul>
+  			</div>
+        <div class="col-md-4 top-menu">
+  				<ul>
+  					<li><a href="test.html">Ваш прогресс</a></li>
+  				</ul>
+  			</div>
+
+      <div class="col-md-11 centerTest">
+        <h1>Тесты</h1>
+    <p align="justify"> В этом разделе вы можете проверить себя! Пройдите тест и узнайте, в
+    каком состоянии сейчас ваша зрительная и слуховая память и логическое мышление.
+    Потом вы можете заниматься по предложенной нами инновационной методике, эффективность
+    которой была подтверждена экспериментально. (Описание в разделе <a href="gym.html">Упражнения</a>.)
+    Попробуйте и проверьте, изменятся ли Ваши результаты!</p>
+<form name="forma1">
+    <h3>Тест на зрительную память</h3>
+    <p> Выполните задания из видео. max 46 баллов</p>
+    <iframe width="60%" height="315" src="https://www.youtube.com/embed/E9eV1XvBgDk" class="Video"
+    class = "Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br> <br> Введите количество набранных баллов
+    <input type="text" name="text1" size="10" maxlength="2" id="pole">
+    <h3>Тест на слуховую память</h3>
+    <p> Выполните задания из видео. max 46 баллов</p>
+    <iframe width="60%" height="315" src="https://www.youtube.com/embed/Tc2E-kc8TO0" class="Video"
+    class = "Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br> <br> Введите количество набранных баллов
+    <input type="text" name="text2" size="10" maxlength="2" id="pole">
+    <h3>Тест на логику</h3>
+    <p> Выполните 9 задач из видео. За каждую верно выполненную задачу поставьте себе 5 баллов. max 45 баллов</p>
+    <iframe width="60%" height="315" src="https://www.youtube.com/embed/HJaIkId8o1U?start=40" class="Video"
+    class = "Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br> <br> Введите количество набранных баллов
+    <input type="text" name="text3" size="10" maxlength="2" id="pole">
+    <br><br> Занимались ли вы инновационной гимнастикой?<br>
+    <select name="time" size="1">
+    <option selected value="0">Ещё нет
+    <option value="1">Да, меньше месяца
+    <option value="2">Да, 1-3 месяца
+    <option value="3">Да, 3-6 месяцев
+    <option value="4">Да, больше полугода
+    </select><br><br>
+    <input type="button" name="button" id="button"
+    value="Готово!" onClick="res();">
+    <br><br>
+</form>
+          </div>
+    </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
