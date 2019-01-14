@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <title>Творчество</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function() {
+   $('a[href^="#"]').click(function () {
+     elementClick = $(this).attr("href");
+     destination = $(elementClick).offset().top;
+     if($.browser.safari){
+       $('body').animate( { scrollTop: destination }, 1100 );
+     }else{
+       $('html').animate( { scrollTop: destination }, 1100 );
+     }
+     return false;
+   });
+ });
+</script>
+  </head>
+  <body>
+      <header>
+	  <p>Marina's gallery</p>
+	  </header>
+<div id="container">
+    <div id="menu">
+    <div id="menu2">
+      <br><br>
+  <a href="document.html">Главная</a><br><br>
+  <a href="author.html">Об авторе</a><br><br>
+  <a class="active" href="#maslo">Картины маслом</a><br><br>
+  <a href="#aquarel">Картины акварелью</a><br><br>
+  <a href="#pastel">Картины пастелью</a><br><br>
+  <a href="#material">Другие материалы</a><br><br>
+  </div>
+    </div>
+    <div id="main">
+      	  <h1> Картины маслом</h1><br>
+	  <div id="maslo">
+	     <div id="box">
+		 <img  id="imggoriz" src="images/m1.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Венеция", 2014г.</p>
+		 </div>
+		 <div id="box">
+	     <img id="imggoriz" src="images/m2.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Тропическое озеро", 2016г.</p>
+		 </div>
+		 <div id="box">
+	     <img  id="imggoriz" src="images/m3.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Осенний лес", 2016г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imgvertic" src="images/m4.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Гордый орёл", 2014г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imggoriz" src="images/m5.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Тигры", 2018г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imggoriz" src="images/m7.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Охапка цветов", 2015г.</p>
+		 </div>
+      </div>
+      	  <h1> Картины акварелью</h1>
+	  <div id="aquarel">
+	  	 <div id="box">
+		 <img id="imgvertic" src="images/a1.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Волшебная сова", 2014г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imggoriz" src="images/a2.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Море", 2018г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imgvertic" src="images/a3.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Васильки", 2014г.</p>
+		 </div>
+	     <div id="box">
+		 <img id="imggoriz" src="images/a4.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Лица Средиземья", 2018г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imggoriz" src="images/a5.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Вечер у вод Сены", 2018г.</p>
+		 </div>
+		  <div id="box">
+		 <img id="imgvertic" src="images/a6.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Солнечная кошечка", 2014г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imggoriz" src="images/a7.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Дракон", 2018г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imgvertic" src="images/a8.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Розы", 2014г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imgvertic" src="images/a9.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Хабаровский утёс", 2014г.</p>
+		 </div>
+      </div>
+      	  <h1> Картины пастелью</h1>
+	  <div id="pastel">
+	     <div id="box">
+		 <img id="imgvertic" src="images/p1.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Летний букет", 2014г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imgvertic" src="images/p2.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Совушка", 2014г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imgvertic" src="images/p3.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Снежный барс", 2014г.</p>
+		 </div>
+		  <div id="box">
+		 <img id="imgvertic" src="images/p4.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Лицо зверя", 2014г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imggoriz" src="images/p5.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Корзинка тюльпанов", 2014г.</p>
+		 </div>
+	     <div id="box">
+		 <img id="imggoriz" src="images/p6.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Кот", 2014г.</p>
+		 </div>
+      </div>
+      	  <h1> Другие материалы </h1>
+	  <div id="material">
+	    <div id="box">
+		 <img id="imgvertic" src="images/d1.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Попугай", витраж, 2016г.</p>
+		 </div>
+		 <div id="box">
+		 <img id="imggoriz" src="images/d2.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Натюрморт", графика, 2014г.</p>
+		 </div>
+	     <div id="box">
+		 <img id="imggoriz" src="images/d3.jpg" onclick = 'openImageWindow(this.src);'>
+		 <p>"Танк", гуашь, 2014г.</p>
+		 </div>
+      </div>
+  </div>
+</div>
+	  <footer>
+    <span>imagery_na</span>
+    <img id="inst" src="images/inst.png">
+	  </footer>
+  </body>
+</html>
