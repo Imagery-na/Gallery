@@ -107,14 +107,15 @@ footer span{
 }
 #author {
  width: 85%;
- margin:0%;
+ height: 77%;
  border:1px solid #7D262F;
  float: right;
 }
 #text{
 width:60%;
+height: 80%;
 margin:1%;
-font: bolder 14px Segoe Print;
+font: bolder 0.9vw Segoe Print;
 color:#6F252C;
 float: left;
 border:1px solid #7D262F;
@@ -122,8 +123,11 @@ padding: 1%;
 padding-top: 0;
 }
 #foto {
-	width:30%;
+	width:25%;
 	float: left;
 	margin:2% 0% 0% 3%;
 	border:2px solid #7D262F;
 }
+
+@media screen and (max-width: 700px)
+{#text{font-size: 1.2vh;}}
