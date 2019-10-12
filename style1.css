@@ -23,11 +23,14 @@ height: 100%;
 }
 .closeBtn{
 	position: absolute;
+	z-index: 126;
 	right: 0;
 	top: 0;
 	cursor: pointer;
 	height: 8vh;
 	width: 8vh;
+	background-image: url('./images/close.png');
+	background-size: 100% 100%;
 }
 #black_fill{
 	position: fixed;
